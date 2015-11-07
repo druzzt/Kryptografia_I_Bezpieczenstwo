@@ -1,2 +1,4 @@
-gcc aompg.c -o play2 -lao -lmpg123 -lpthread
+
 gcc aompg.c decryptor.c -o play3 -lao -lmpg123 -lpthread -lcrypto -lssl
+
+gcc secretIT.c -o sit -lcrypto -lssl
