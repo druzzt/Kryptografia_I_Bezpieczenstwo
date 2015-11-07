@@ -14,7 +14,7 @@
 	echo $plain_text3;
 	$plain_text=$plain_text3;
 	$key1 = '0';
-    $key = 'cbce517f';	//append to the key2
+  $key = 'cbce517f';	//append to the key2
 	for($x=350000000; $x<=4294967297; $x++){ // this line can be splitted into multiple threads by dividing max number on separate servers4294967297..3000000000 and 3000000000..2000000000 and so on...
 		$key2=dechex($x);
 		$key2=$key2.$key;
@@ -35,7 +35,7 @@
 				for($k=0;$k<$j;$k++){
 					$schar=mb_substr($p_t,$k,1);
 					if((ord($schar)>=32 && ord($schar)<=35) || (ord($schar)>=48 && ord($schar)<=59) || ord($schar)==64 || (ord($schar)>=65 && ord($schar)<=90) || (ord($schar)>=96 && ord($schar)<=122)){
-						$longEnough++;
+						$longEnough++;//a..z,A..Z,()!? "" ' '
 					}
 				}
 				if($longEnough==$j || $longEnough==$j-1 || $longEnough==$j-2 || $longEnough==$j-3 ){
@@ -44,7 +44,7 @@
 				}
 			
 		}
-	}//a..z,A..Z,()!? "" ' '
+	}
     mcrypt_module_close ($td); // end of decryption module
 ?>
 </head>
@@ -52,12 +52,3 @@
 </FORM>
 </body>
 </html>
-<!-- // MIGHT BE USEFUL FOR expanding this program
-// bindec() and decbin();
-  //dechex() and hexdec();	
-	//$plain_text2HEX = bin2hex($plain_text2);
-	//$isit = var_dump($plain_text === $plain_text2);
-	//echo wordwrap($plain_text2,1,"<br>\n");
-	//print_r ($plain_text2HEX=explode(" ",$plain_text2));
-		//$myfile = fopen("encryptedFile.txt", "r") or die("Unable to open file!");	-->
-		

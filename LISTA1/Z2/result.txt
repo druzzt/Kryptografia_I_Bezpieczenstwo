@@ -1,5 +1,0 @@
-<html>
-<head> 
-<title>DECIPHER ARC4</title>
-  ğ * ë Â E Õ ş Â Ô œ G ¡  ¦ ß " ·  ! Ä ½ €  §  €     _ P O  ğ  ÷ 1 ± 2 5 3  ß ³ ¡ Â É Ê æ — ¦ ­ ¡ } Y Ô & j ı ú _ À A E 3
-Fatal error: Call to undefined function mcrypt_module_open() in /Users/arkadiuszlewandowski/Kryptografia_I_Bezpieczenstwo/LISTA1/Z2/decipherARC4.php on line 22
